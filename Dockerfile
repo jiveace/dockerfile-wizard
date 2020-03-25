@@ -3,6 +3,9 @@ MAINTAINER "L0gIn <imladjenovic@scottlogic.com>"
 
 ENV TERRAFORM_VERSION=0.12.21
 
+RUN apk add python2-dev  # for python2.x installs
+RUN apk add python3-dev  # for python3.x installs
+
 RUN apk add --no-cache gcc 
 
 # aws cli and other bash tools
