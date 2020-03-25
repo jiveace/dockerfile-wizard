@@ -8,6 +8,9 @@ RUN apk add musl-dev
 RUN apk add python2-dev  # for python2.x installs
 RUN apk add python3-dev  # for python3.x installs
 
+RUN apk add libffi-dev
+RUN apk add  openssl-dev
+
 RUN apk add --no-cache gcc 
 
 # aws cli and other bash tools
