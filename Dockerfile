@@ -3,6 +3,8 @@ MAINTAINER "L0gIn <imladjenovic@scottlogic.com>"
 
 ENV TERRAFORM_VERSION=0.12.21
 
+RUN apk add --no-cache gcc 
+
 # aws cli and other bash tools
 RUN apk -v --update add \
         zip \
